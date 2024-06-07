@@ -13,7 +13,7 @@ body {
 
 .container {
     max-width: auto;
-    margin: 40px auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -47,28 +47,7 @@ header{
     text-align: center;
 }
 
-header nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav ul li{
-    margin-right: 20px;
-}
-
-header nav a{
-    color: #fff;
-    text-decoration: none;
-}
-
-header nav a:hover{
-    color: #ccc;
-}
-
-/* About Styles */
+/* About Section */
 
 .about {
     background-color: #f7f7f7;
@@ -118,6 +97,18 @@ header nav a:hover{
 .card h2 {
     margin-top: 0;
 }
+
+.project-links a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.project-links a:hover {
+    color: #333;
+    text-decoration: underline;
+    
+}
+
 /* Footer Section */
 footer{
     background-color: #333;
@@ -127,7 +118,14 @@ footer{
 }
 
 .socials a {
+    color: #fff;
+    text-decoration: none;
     margin-right: 20px;
+}
+
+.socials a:hover{
+    color: #ffffff90;
+    text-decoration: underline;
 }
 .socials img {
     width: 24px;
