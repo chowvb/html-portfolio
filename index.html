@@ -3,94 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vincent's Web Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <div class = "container">
-            <nav class = "flex items-centre justify-between">
-                <h1>Welcome.</h1>
-            </nav>
-        </div>
-    </header>
-
-    <section class = "about">
-        <div class = "container flex items-centre">
-            <div class = "left flex-1 justify-right">
-                <img src="./assets/images/Vietnam2.jpg" alt="Profile Picture">
-            </div>
-            <div class = "right flex-1">
-                <h1>About Me</h1>
-                <p>My name is Vinnie, and I graduated with a BSc in Biology from Newcastle University in 2023. <br> 
-                    I am now pursuing a career in Software Engineering. Although my academic background is in science, my interest in programming was ignited during my final year at university. 
-                    I conducted a research project where I used Deep Learning to investigate food preferences in birds. With only a basic understanding of programming and artificial intelligence, 
-                    I spent six months gathering data and building an image classification model that significantly streamlined the process of identifying bird species. <br>
-
-                    After graduating, I worked as a personal banker at NatWest Bank while considering my long-term career goals. It was during a sabbatical spent backpacking through Asia and Oceania that I decided to pursue programming. 
-                    Meeting many travelers who worked as Software Engineers, Data Analysts, and Web Developers inspired me to want a similar career that would allow me to work and travel. <br>
-                    
-                    Since then, I have been working on personal projects to enhance my programming skills.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class = "project">
-        <div class = "container">
-            <h1 class="project-head">Projects</h1>
-            <p>Personal Projects I've Worked On (Links embedded into project titles)</p>
-            <div class = "project-grid">
-                <div class = "card">
-                    <h2 class = "project-links"><a href="https://chowvb.github.io/html-portfolio/">Web Portfolio Project</a></h2>
-                    <p>The web page you are currently viewing! I'm currently taking a web development course with Udemy, and this is the overall output so far. Source code can be found <a href="https://github.com/chowvb/html-portfolio" target="_blank">here.</a> <br>
-                    Hopefully with the the skills I learn on this course I can further develop my professional portfolio website and showcase my new skills. So far in this course I've learnt the basics in HTML and CSS.</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div id = "main-container">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme = "dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Welcome</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Content
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./about_me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="./projects.html">Projects</a></li>
+                            <li><a class="dropdown-item" href="./photography.html">Photography</a></li>
+                            <li><a class="dropdown-item" href="./travel.html">Travel</a></li>
+                            <li><a class="dropdown-item" href="./fitness.html">Fitness</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Info</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </nav>
+        </header>
 
-                <div class = "card">
-                    <h2 class = "project-links"><a href="https://chowvb.github.io/FM24_analysis/" target="_blank">Football Manager 24 Moneyball</a></h2>
-                    <p>Combining all of my favorite things into one project. Programming, Football and Video Games. <br> 
-                        Football Manager is a popular football simulation game that allows players to take on the role of a manager, where players make critical decisions on tactics, transfers, training schedules among many other things to strive for success. <br>
-                        This project involves using Python to conduct data analysis and producing plots/graphs to visualise player performance. It also uses HTML and CSS to showcase my findings on its own website. JavaScript is used to make the plots and figures interactive. <br>
-                        The analysis performed will help me make decisions on which areas of the pitch I need to strengthen by either promoting youth players or dipping into the transfer market to buy new players. 
+        <div id = "hero">
+            <div class = "about-me-card">
+                <div class = "hero_card">
+                    <img src="./assets/images/Vietnam2.jpg" alt="Profile Picture">
+                </div>
+                <div class = "hero_card">
+                    <h3>About Me</h3>
+                    <p>
+                        Hi everone, My name is Vinnie. Welcome to my webpage. <br>
+                        I'm a Biology graduate from Newcastle University persuing a career in Software Development. <br>
+                        In this webpage I'll share what interests me from personal coding projects,
+                        to my interests in photography and travel. 
                     </p>
                 </div>
+            </div>
 
-                <div class = "card">
-                    <h2 class = "project-links"><a href="https://github.com/chowvb/FPL_analysis" target="_blank">FPL Data Analysis</a></h2>
-                    <p>Fantasy Premier League (FPL) is an online game where you create a draft dream team and compete against other players. This game follows real life matches where the players you pick score points based on their individual performance, as well as team performance.
-                        With a limited budget, you have to make decisions on which players you want to include in your team. The game requires you to pick two goalkeepers, 5 defenders, 5 midfielders and 3 forwards. <br>
-                        FPL release the week by week data after each gameweek is played, this data is scrapped of their website and cleaned for data analysis. <br>
-                        A secondary statistics database called FBref is also scrapped to obtain more detailed data on teams and players. The aim of this project is to make informed decisions on which players to transfer in and out for specific gameweeks. <br>
-                        <br>
-                        Python was used in this project to scrape data and perform data analysis.
-                    </p>
-                </div>
 
-                <div class = "card">
-                    <h2 class = "project-links"><a href="https://github.com/chowvb/BIO3199-object_detection_project" target="_blank">Image Classification Research Project</a></h2>
-                    <p>My research was titled: <br> Using Deep Learning to Investigate Food Preferences in Small UK Garden Birds During Winter. <br><br> 
-
-                    In this project I aimed partially automate the data collection and analysis as part of my thesis. I created an Image Classification model using Keras and TensorFlow to automatically classify species of birds based on images. <br>
-                    
-                    The model was trained on 30,000 images that were prelabelled on iNaturalist (A citizen science database). I improved my image classification model by Microsoft's MegaDetector which is an object detection model. 
-                    Using MegaDetector I extrated the bounding-boxes surrounding the birds identified in the training data and cropped them. Doing this allowed me to improve the accuracy of my image classification model, as the model would learn the specificitys of the birds rather than the background in the bird images. <br>
-                    I then used my newly trained model on my data (Images I collected) to then classify the species of birds in my research field. <br>
-
-                    Applying MegaDetector and my image classification model, I automated the filtering and classification of 41,371 images collected during my research project. This process took roughly 5 hours to complete on my home PC, in comparison to 40 hours it would take to manually classify each image. <br>
-                    Whilst no new findings were discovered in this thesis, the application of Computer Vision in Ecology could significantly improve data processing and decision making in Ecology. <br><br>
-                    I'm currently going through this project again, fixing bugs and making the code universal so that anyone can pull the repository and build their own image classification model.</p>
+            <div class = "carousel-card">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/programming.png" class="d-block w-100" alt="Programming Section">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/travel.png" class="d-block w-100" alt="Travel Section">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/photography.png" class="d-block w-100" alt="Photography Section">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/fitness.png" class="d-block w-100" alt="Fitness Section">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
 
-    <footer id = "footer">
-        <div class = "container-fluid">
-            <div class = "socials">
-                <a href="https://www.linkedin.com/in/vincent-chow-339577260/" target = "_blank">LinkedIn</a>
-                <a href="https://github.com/chowvb" target = "_blank">GitHub</a>
+
+
+        <footer>
+            <div>
+                <div id = "socials">
+                    <a href="https://www.linkedin.com/in/vincent-chow-339577260/" target = "_blank">LinkedIn</a>
+                    <a href="https://github.com/chowvb" target = "_blank">GitHub</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
+
+
 </html>
