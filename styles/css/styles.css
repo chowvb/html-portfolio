@@ -9,7 +9,8 @@
     }
     #main-container {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         background-color: #333;
         color: #f9f9f9;
         display: flex;
@@ -111,6 +112,7 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
+        margin-right: 20%;
     }
 
     #about-me-hero .grid-2{
@@ -135,5 +137,53 @@
 
     .table-years {
         text-align: right;
+    }
+
+
+    /*The following section is for the contact me page*/
+    .header-center {
+        text-align: center;
+    }
+    .contact-me-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .cm-flex-card {
+        text-align: center;
+        width: 250px;
+        height: 255px;
+        background-color: grey;
+        border-radius: 10%;
+    }
+    .contact-me-links {
+        width: 100px ;
+    }
+    
+    /* About me Section */
+    #about-me-main-container {
+        margin: 50px;
+        
+    }
+
+    #about-me-main-container .about-me-hero {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #about-me-main-container .about-me-hero .about-me-button{
+        margin-top: 50px;
+    }
+
+    #about-me-main-container .about-me-history {
+        margin-top: 100px;
+    }
+    #about-me-main-container #hero .hero_card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 250px;
     }
 }
