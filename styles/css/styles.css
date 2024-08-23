@@ -1,189 +1,222 @@
-@media (min-width: 768px){
-    * {
-        box-sizing: border-box;
-        margin: 0;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-    }
-    #main-container {
-        width: 100%;
-        min-height: 100vh;
-        height: auto;
-        background-color: #333;
-        color: #f9f9f9;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.main-container {
+    min-height: 100vh;
+    height: auto;
+    background-color: #333;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
 
-    }
-
-    #main-container header {
-        width: 100%;
-        height: 70px;
-        background-color: #333;
-        display: flex;
-    }
-
-    #main-container header nav {
-        display: flex;
-        flex-direction: row;
-        flex: 1;
-        justify-content: left;
-        align-items: center;
-    }
-
-    #main-container header nav .flex-card{
-        margin-left: 20px;
-    }
-
-    #hero {
-        width: 100%;
-        color:white;
-        max-width: 1366px;
-        padding: 50px 30px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        flex-grow: 1;
-    }
-
-    #hero .about-me-card {
-        height: 255px;
-        width: 400px;
-        display: grid;
-        justify-content: center;
-    }
-
-    #hero .about-me-card .hero_card img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-    #hero .about-me-card .hero_card p {
-        text-align: center;
-    }
-
-    #hero .carousel-card {
-        margin-left: 50px;
-        background-color: white;
-        height: 450px;
-        width: 800px;
-        justify-content: right;
-    }
-
-    #main-container footer {
-        width: 100%;
-        color: white;
-        display: flex;
-        justify-content: center;
-    }
-
-    #socials a {
-        color: #fff;
-        text-decoration: none;
-        margin-right: 20px;
-    }
-    #socials a:hover {
-        color: #ffffff90;
-        text-decoration: underline;
-    }
-
-    /* about me section */
-    #about-me-hero {
-        width:100%;
-        color: white;
-        padding : 50px 30px;
-        text-align: left;
-        display: grid;
-        grid-template-rows: 250px;
-        grid-template-columns: 1.5fr 1fr;
-        gap: 20px;
-    }
-
-    #about-me-hero .grid-1 {
-        color: wheat;
-        grid-column: span 2;
-        grid-row: span 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-right: 20%;
-    }
-
-    #about-me-hero .grid-2{
-        grid-column-start: 2 /3;
-        grid-row-start: 1;
-        color: green;
-        order: 0;
-    }
-    #about-me-hero .grid-3{
-        grid-column-start: 2;
-        grid-row-start: 2;
-        color: brown;
-        order: 0;
-    }
-
-    table {
-        width: 500px;
-    }
-    th, td {
-        padding: 5px;
-    }
-
-    .table-years {
-        text-align: right;
-    }
+.up-button {
+    position: fixed;
+    background-color: #333;
+    outline: none;
+    box-shadow: none;
+    right: 0;
+    top: 0;
+}
 
 
-    /*The following section is for the contact me page*/
-    .header-center {
-        text-align: center;
-    }
-    .contact-me-flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-    }
-    .cm-flex-card {
-        text-align: center;
-        width: 250px;
-        height: 255px;
-        background-color: grey;
-        border-radius: 10%;
-    }
-    .contact-me-links {
-        width: 100px ;
-    }
-    
-    /* About me Section */
-    #about-me-main-container {
-        margin: 50px;
-        
-    }
+/*Header*/
+header {
+    font-size: large;
+}
 
-    #about-me-main-container .about-me-hero {
-        margin-top: 50px;
-        text-align: center;
-    }
 
-    #about-me-main-container .about-me-hero .about-me-button{
-        margin-top: 50px;
-    }
+/*Hero*/
+.hero {
+    margin-top: 15%;
+    min-width: 50%;
+    flex-grow: 1;
+    width: 66%;
+    height: fit-content;
+    top: 1.5rem;
+}
 
-    #about-me-main-container .about-me-history {
-        margin-top: 100px;
-    }
-    #about-me-main-container #hero .hero_card img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-left: 250px;
-    }
+.hero .section-content .hero-title {
+    z-index: 10;
+    font-weight: bold;
+}
+
+
+
+.hero .section-content p {
+    border-right: 2.5px solid orange;
+    font-size: 24px;
+}
+
+
+
+/*About Me*/
+.about-me {
+    margin-top: 25%;
+    width: 66%;
+    height: fit-content;
+    top: 1.5rem;
+}
+
+.about-me .section-content .about-me-title{
+    z-index: 10;
+}
+
+.about-me-title::after {
+    position: absolute;
+    margin-top: .65em;
+    content: "";
+    height: 0px;
+    margin-left: 2.5%;
+    max-width: 50%;
+    width: 100%;
+    border-width: 2.5px 0 0 0;
+    border-color: orange;
+    border-style: solid;
+    z-index: 0;
+}
+
+.about-me .section-content p{
+    padding-left: 25px;
+    border-left: 2.5px solid orange;
+    font-size: 20px;
+}
+
+
+
+/*Skills*/
+#skills-flex {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 5px;
+
+}
+.skills-card{
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+
+/*Work History*/
+.work-history {
+    margin-top: 5%;
+    width: 66%;
+    height: fit-content;
+    top: 1.5rem;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-right: 2.5px solid orange;
+}
+
+.job-history {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-item {
+    display: flex;
+    background-color: #424242;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.company-logo {
+    flex: 0 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+.company-logo svg{
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+.job-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding:  10px 20px;
+}
+
+.job-details > div {
+    margin-bottom: 5px;
+}
+
+.company-name {
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.position {
+    color: #f8f8f8;
+    font-size: 1.2em;
+}
+.tenure {
+    color: #f8f8f8;
+    font-size: 0.9em;
+}
+
+/*Projects*/
+.projects {
+    margin-top: 5%;
+    height: fit-content;
+    width: 66%;
+    font-size: 18px;
+}
+.project-name {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.light-subtle{
+    background-color: #424242 !important;
+}
+.light-light-subtle {
+    background-color: #545454 !important;
+}
+.project-logo-1 {
+    width: 168px;
+    height: 205px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+.project-logo-3 {
+    width: 168px;
+    height: 202px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Contact Me*/
+.contact-me {
+    height: 500px;
+}
+/*CV*/
+.cv {
+    height: 500px;
+}
+/*Footer*/
+footer {
+    width: 100%;
 }
