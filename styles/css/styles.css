@@ -202,21 +202,129 @@ header {
     margin-right: auto;
     padding-top: 20px;
 }
+
+.project-logo-2 {
+    width: 168px;
+    height: 205px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
 .project-logo-3 {
     width: 168px;
     height: 202px;
     margin-left: auto;
     margin-right: auto;
 }
-/*Contact Me*/
-.contact-me {
-    height: 500px;
-}
-/*CV*/
-.cv {
-    height: 500px;
-}
 /*Footer*/
 footer {
     width: 100%;
+}
+
+
+/*Mobile Devices*/
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .up-button {
+        top: 60px;
+        right: 5px;
+        z-index: 10;
+    }
+
+    /*Header*/
+    header {
+        font-size: medium;
+        text-align: center;
+    }
+
+    /*Hero*/
+    .hero {
+        margin-top: 25%;
+        width: 90%;
+    }
+
+    .hero .section-content p {
+        font-size: 18px;
+        border-right: none; /* Remove borders that might clutter on small screens */
+    }
+
+    /*About Me*/
+    .about-me {
+        margin-top: 75%;
+        width: 90%;
+    }
+
+    .about-me-title::after {
+        max-width: 5%;
+        margin-left: 5%;
+    }
+
+    .about-me .section-content p {
+        padding-left: 15px;
+        font-size: 16px;
+        border-left: none; /* Remove borders for cleaner look */
+    }
+
+    /*Skills*/
+    #skills-flex {
+        margin-top: 5%;
+        flex-direction: row;
+        row-gap: 10px;
+        column-gap: 0;
+    }
+
+    .skills-card {
+        flex-basis: 7.5%; /* Make each card full width on small screens */
+        font-size: 18px;
+    }
+
+    /*Work History*/
+    .work-history {
+        margin-top: 15%;
+        width: 90%;
+        border-right: none;
+        padding: 0; /* Remove padding to save space */
+    }
+
+    .job-item {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .company-logo {
+        flex: none;
+        margin-bottom: 10px; /* Move logo above details */
+    }
+
+    /*Projects*/
+    .projects {
+        margin-top: 10%;
+        width: 90%;
+        align-items: center;
+    }
+
+    .project-logo-1 {
+        width: 100px;
+        height: auto;
+        margin: auto auto; /* Adjust logo size */ 
+    }
+
+    .project-logo-2 {
+        width :200px;
+        height: auto;
+        margin: auto auto;
+    }
+    .project-logo-3 {
+        width: 100px;
+        height: auto;
+        margin-right: 40%;  
+    }
+
+    /*Footer*/
+    footer {
+        text-align: center;
+    }
 }
